@@ -50,7 +50,7 @@ export default function () {
     "access denied": (r) => r.status === 403,
     "resource not found": (r) => r.status === 404,
     "internal server error": (r) => r.status === 500,
-    "response time < 500ms": (r) => r.timings.duration < 500,
+    "response time < 500ms": (r) => r.timings.duration < 500, // !!!
   });
 
   sleep(1);
